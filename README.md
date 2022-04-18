@@ -1,2 +1,2 @@
-# Aprendendo-Python-do-zero-com-Eric-Freeman.-
-Esse repositório é para quem como eu está apanhando para aprender programação, mas com a grande ajuda de Eric Freeman, o caminho fica mais fácil e divertido.
+# Learning-Python-from-scratch-with-Eric-Freeman.-
+This repository is for those like me who are struggling to learn programming, but with the great help of Eric Freeman, the path becomes easier and more fun.
