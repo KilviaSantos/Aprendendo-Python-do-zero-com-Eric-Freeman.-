@@ -20,6 +20,11 @@ elif computer_choice == 'scissors' and user_choice == 'paper' :
 else:
     winner = 'User'   
 
-print('The', winner, 'wins!')
+
+if winner == 'Tie':
+    print('We both chose', computer_choice + ', play again.')
+
+else :
+    print(winner, 'won. The computer chose', computer_choice + '.')
 
 
