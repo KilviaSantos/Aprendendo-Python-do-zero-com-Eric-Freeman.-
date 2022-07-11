@@ -1,4 +1,3 @@
-from ast import While
 import random
 # Importa o módulo random.
 winner = ''
@@ -35,6 +34,3 @@ if winner == 'Tie':
 else :
     print(winner, 'won. The computer chose', computer_choice + '.')
 # Anuncia o empate ou o vencedor junto com a escolha do computador.
-
-
-
