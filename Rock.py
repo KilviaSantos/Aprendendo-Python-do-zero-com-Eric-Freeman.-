@@ -1,24 +1,24 @@
-# Importa o módulo random.
+# Import the random module.
 import random
 
-# Configura a variável winner.
+# Configure the winner variable.
 winner = ''
 
-# O computador escolhe aleatoriamente pedra, papel ou tesoura através do 
+# The computer randomly chooses rock, paper, or scissors through the
 # random.choice.
 choices = ['rock', 'paper', 'scissors']
 computer_choice = random.choice(choices)
 
-# Identifica se o usuário fez uma escolha inválida e o while solicicita novamente
-# até que seja uma entrada válida. 
+# Identifies if the user made an invalid choice and the while prompts again
+# until it's a valid input. 
 user_choice = ''
 while (user_choice != 'rock' and 
         user_choice != 'paper' and
         user_choice != 'scissors') :
     user_choice = input('rock, paper or scissors? ')
 
-# Aqui é organzada a lógica, baseada na vitória do computadr para definir qual será
-# a variável winner.    
+# Here the logic is organized, based on the victory of the computer to define which will be
+# the variable winner.    
 if computer_choice == user_choice:
     winner = 'Tie'
 elif computer_choice == 'paper' and user_choice == 'rock':
@@ -30,7 +30,7 @@ elif computer_choice == 'scissors' and user_choice == 'paper' :
 else:
     winner = 'User'   
 
-# Anuncia o empate ou o vencedor junto com a escolha do computador.
+# Announces tie or winner along with computer choice.
 if winner == 'Tie':
     print('We both chose', computer_choice + ', play again.')
 else :
