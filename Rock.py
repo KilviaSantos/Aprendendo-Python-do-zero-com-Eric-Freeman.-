@@ -1,16 +1,37 @@
+# Import the random module.
 import random
 
-random_choice = random.randint(0,2)
-print('The computer chooses', random_choice)
-if random_choice==0:
-    print('rock')
-elif random_choice==1:
-    print('paper')
+# Configure the winner variable.
+winner = ''
+
+# The computer randomly chooses rock, paper, or scissors through the
+# random.choice.
+choices = ['rock', 'paper', 'scissors']
+computer_choice = random.choice(choices)
+
+# Identifies if the user made an invalid choice and the while prompts again
+# until it's a valid input. 
+user_choice = ''
+while (user_choice != 'rock' and 
+        user_choice != 'paper' and
+        user_choice != 'scissors') :
+    user_choice = input('rock, paper or scissors? ')
+
+# Here the logic is organized, based on the victory of the computer to define which will be
+# the variable winner.    
+if computer_choice == user_choice:
+    winner = 'Tie'
+elif computer_choice == 'paper' and user_choice == 'rock':
+    winner = 'Computer'
+elif computer_choice == 'rock' and user_choice == 'scissors' :
+    winner = 'Computer'
+elif computer_choice == 'scissors' and user_choice == 'paper' :
+    winner = 'Computer'   
 else:
-    print('scissors')
+    winner = 'User'   
 
-
-#se random_choice==0, computer_choice=='rock'
-#se random_choice==1, computer_choice=='paper'
-#se random_choice==2, computer_choice=='scissors'
-
+# Announces tie or winner along with computer choice.
+if winner == 'Tie':
+    print('We both chose', computer_choice + ', play again.')
+else :
+    print(winner, 'won. The computer chose', computer_choice + '.')
