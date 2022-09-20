@@ -7,3 +7,11 @@
 #         print(smoothies[i], 'countains coconut')
 #     i=i+1
 
+smoothies = ['coconut', 'stawberry', 'banana', 'tropical', 'acai berry']
+
+has_coconut = [True, False, False, True, False]
+i = 0
+while i < len(has_coconut):
+    if has_coconut[i]:
+        print(smoothies[i], 'countains coconut')
+    i = i + 1
