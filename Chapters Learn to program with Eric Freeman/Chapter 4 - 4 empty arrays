@@ -1,0 +1,11 @@
+menu = []
+menu.append('Burguer')
+menu.append('Sushi')
+print(menu)
+
+# Sharpen the pencil
+
+mystery = ['secret'] * 5
+print(mystery)
+mystery = 'secret' * 5
+print(mystery)
