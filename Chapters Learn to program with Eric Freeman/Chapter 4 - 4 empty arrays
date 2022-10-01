@@ -1,11 +1,15 @@
+# Create list
+
 menu = []
 menu.append('Burguer')
 menu.append('Sushi')
 print(menu)
-
+del menu[0]
+print menu)
 # Sharpen the pencil
 
 mystery = ['secret'] * 5
 print(mystery)
 mystery = 'secret' * 5
 print(mystery)
+
