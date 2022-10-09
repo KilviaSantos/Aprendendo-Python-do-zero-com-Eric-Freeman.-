@@ -8,7 +8,16 @@ for i in range(length):
     print('Bubble solution #'+ str(i), 'score:', scores[i])
     if scores[i] > high_score:
         high_score = scores[i]
+        high_score_2 = scores[i]
+        high_score_3 = scores[i]
 
 print('Bubbles tests:', length)
-print('Highest bubble score:', high_score)
+print('Highest bubble score:', high_score, 'and', high_score_2)
+best_solutions = []
+for i in range(length):
+    if high_score == scores[i]:
+        best_solutions.append(i)
+
+print('Solutions with highest score:', best_solutions)
+
     
